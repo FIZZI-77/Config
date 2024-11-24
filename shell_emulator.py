@@ -9,10 +9,10 @@ from tkinter import scrolledtext, messagebox
 class ShellEmulator:
     def __init__(self, config_path):
         self.load_config(config_path)
-        self.cwd = '/'  # Текущая рабочая директория
+        self.cwd = '/'  
         self.history = []  # История команд
         self.output = []  # Список для хранения вывода
-        self.load_virtual_fs()  # Загрузка виртуальной файловой системы
+        self.load_virtual_fs()  # Загрузка виртуальной файловой системы из zip 
         self.current_directory = "/"
 
     def load_config(self, config_path):
