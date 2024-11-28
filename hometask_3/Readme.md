@@ -67,4 +67,4 @@ python -m unittest discover -s config_translator -p "tests.py"
 ```
 Результат тестов
 
-![Результаты тестов](Снимок3.png)
+![Результаты тестов](Снимок3.PNG)
