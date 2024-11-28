@@ -41,8 +41,7 @@ average_pages: ".{ 2 3 pow() 2 / }."
 ```bash
 python main.py -i library_config.yml -o output_data/example_output.uya 
 ```
-Результаты 
-
+Результаты (хранятся в файле example_output.uya )
 
 
 ```
@@ -67,3 +66,5 @@ var average_pages 4.0;
 python -m unittest discover -s config_translator -p "tests.py"
 ```
 Результат тестов
+
+![Результаты тестов](Снимок3.png)
