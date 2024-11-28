@@ -36,8 +36,14 @@ categories: [ "Fiction", "Science", "Biography" ]
 category_count: ".{ len([ 'Fiction', 'Science', 'Biography' ]) }."
 average_pages: ".{ 2 3 pow() 2 / }."
 ```
+Запуск программы
 
+```bash
+python main.py -i library_config.yml -o output_data/example_output.uya 
+```
 Результаты 
+
+
 
 ```
 var library_name 'City Library';
