@@ -1,0 +1,13 @@
+var library_name 'City Library';
+var books [ begin
+ title := 'The Great Gatsby';
+ authors := [ 'F. Scott Fitzgerald' ];
+ pages := '.{ 10 20 + }.';
+end; begin
+ title := '1984';
+ authors := [ 'George Orwell' ];
+ pages := '.{ 50 50 - }.';
+end ];
+var categories [ 'Fiction'; 'Science'; 'Biography' ];
+var category_count 3;
+var average_pages 4.0;

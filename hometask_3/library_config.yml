@@ -1,0 +1,11 @@
+library_name: "City Library"
+books:
+  - title: "The Great Gatsby"
+    authors: ["F. Scott Fitzgerald"]
+    pages: ".{ 10 20 + }."  # Пример сложения (10 + 20 = 30)
+  - title: "1984"
+    authors: ["George Orwell"]
+    pages: ".{ 50 50 - }."  # Пример вычитания (50 - 50 = 0)
+categories: [ "Fiction", "Science", "Biography" ]
+category_count: ".{ len([ 'Fiction', 'Science', 'Biography' ]) }." # Длина массива категорий
+average_pages: ".{ 2 3 pow() 2 / }."  # Пример со степенью и делением ((2^3)/2 = 4)

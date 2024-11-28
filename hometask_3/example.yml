@@ -1,0 +1,6 @@
+server_name: "example.com"
+max_connections: 1000
+routes:
+  - "/home"
+  - "/login"
+  - "/register"

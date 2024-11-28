@@ -1,0 +1,9 @@
+server_name: "example.com"
+max_connections: 1000
+routes:
+  - "/home"
+  - "/login"
+  - "/register"
+calculated_routes: ".{ 3 4 + }."  # Выражение вычисляет количество маршрутов (3 + 4 = 7)
+timeout: ".{ 2 3 pow() }."        # Вычисление степени (2^3 = 8)
+route_names_length: ".{ len([ '/home'; '/login'; '/register' ]) }." # Длина массива маршрутов

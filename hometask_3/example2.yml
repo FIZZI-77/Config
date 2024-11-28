@@ -1,0 +1,5 @@
+db_name: "test_db"
+db_port: 5432
+credentials:
+  user: "admin"
+  password: "admin123"
