@@ -55,4 +55,9 @@ var category_count 3;
 var average_pages 4.0;
 ```
 
+
+Запуск тестов
+```bash
+python -m unittest discover -s config_translator -p "tests.py"
+```
 Результат тестов
