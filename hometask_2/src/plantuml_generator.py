@@ -1,3 +1,4 @@
+import os
 import subprocess
 
 def generate_plantuml_content(graph):
