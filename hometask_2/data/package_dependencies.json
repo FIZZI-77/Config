@@ -1,0 +1,24 @@
+{
+  "packageName": "express",
+  "dependencies": {
+    "accepts": {
+      "mime-types": {
+        "mime-db": {}
+      },
+      "negotiator": {}
+    },
+    "array-flatten": {},
+    "body-parser": {
+      "debug": {
+        "ms": {}
+      },
+      "iconv-lite": {},
+      "raw-body": {
+        "unpipe": {}
+      }
+    },
+    "content-disposition": {
+      "safe-buffer": {}
+    }
+  }
+}
