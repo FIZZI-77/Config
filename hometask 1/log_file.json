@@ -1,0 +1,52 @@
+[
+    {
+        "type": "execute_command",
+        "details": {
+            "command": "ls"
+        },
+        "cwd": "/"
+    },
+    {
+        "type": "ls",
+        "details": {
+            "cwd": "/"
+        },
+        "cwd": "/"
+    },
+    {
+        "type": "execute_command",
+        "details": {
+            "command": "cd some_directory"
+        },
+        "cwd": "/"
+    },
+    {
+        "type": "cd",
+        "details": {
+            "from": "/",
+            "to": "some_directory"
+        },
+        "cwd": "some_directory"
+    },
+    {
+        "type": "execute_command",
+        "details": {
+            "command": "ls"
+        },
+        "cwd": "some_directory"
+    },
+    {
+        "type": "ls",
+        "details": {
+            "cwd": "some_directory"
+        },
+        "cwd": "some_directory"
+    },
+    {
+        "type": "execute_command",
+        "details": {
+            "command": "clear"
+        },
+        "cwd": "some_directory"
+    }
+]

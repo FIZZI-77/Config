@@ -1,11 +1,14 @@
 {
     "computer": {
-        "name": "MyShell"
+        "name": "MyComputer"
     },
     "filesystem": {
         "path": "virtual_fs.zip"
     },
     "startup": {
         "script": "startup_script.txt"
+    },
+    "logging": {
+        "path": "log_file.json"
     }
 }
