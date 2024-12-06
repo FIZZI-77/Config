@@ -7,11 +7,16 @@ def get_npm_dependencies(package_name):
     """
     Возвращает зависимости указанного npm-пакета.
     """
-    cmd = ['npm', 'view', package_name, 'dependencies', '--json']
+    cmd = [r"C:\Program Files\nodejs\npm.cmd", "view", package_name, "dependencies", "--json"]
+
+    print(f"Выполнение команды: {' '.join(cmd)}")  # Добавлено для отладки
     result = subprocess.run(cmd, capture_output=True, text=True)
+    print(f"stdout: {result.stdout}")  # Добавлено для отладки
+    print(f"stderr: {result.stderr}")  # Добавлено для отладки
     if result.returncode != 0:
-        raise Exception(f"Ошибка получения зависимостей для пакета {package_name}.")
+        raise Exception(f"Ошибка получения зависимостей для пакета {package_name}: {result.stderr}")
     return json.loads(result.stdout) if result.stdout else {}
+
 
 
 def save_dependencies_to_file(package_name, dependencies, file_path="data/package_dependencies.json"):

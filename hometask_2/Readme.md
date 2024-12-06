@@ -140,7 +140,7 @@ npm-dependency-visualizer/
 ### Запуск программы 
 
 ```bash
-python main.py --package-name express
+python main.py --package-name axios
 ```
 
 ![График зависимостей в нашем файле](Снимок4.PNG)

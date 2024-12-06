@@ -1,6 +1,10 @@
 @startuml
-"express" --> "accepts"
-"express" --> "array-flatten"
-"express" --> "body-parser"
-"express" --> "content-disposition"
+"axios" --> "follow-redirects"
+"axios" --> "form-data"
+"axios" --> "proxy-from-env"
+"form-data" --> "asynckit"
+"form-data" --> "combined-stream"
+"form-data" --> "mime-types"
+"combined-stream" --> "delayed-stream"
+"mime-types" --> "mime-db"
 @enduml
